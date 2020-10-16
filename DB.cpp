@@ -10,9 +10,10 @@ using namespace std;
 
 HD *DB::GetHDByName(std::string HDName) {
     //need to pull HD from the database
+    return new HD;
 }
 
-void DB::InsertHD(HD) {
+void DB::InsertHD(HD *hd) {
 
 }
 

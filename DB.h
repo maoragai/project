@@ -8,12 +8,12 @@
 
 #include <string>
 #include "HD.h"
-
+class HD;
 class DB {
 public:
-    HD *GetHDByName(std::string HDName);
+    HD* GetHDByName(std::string HDName);
 
-    void DB::InsertHD(HD);
+    void InsertHD(HD *hd);
 };
 
-#endif //UNTITLED2_DB_H
+#endif //UNTITLED2_DB_

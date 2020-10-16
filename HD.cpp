@@ -12,10 +12,10 @@ enum FileSource {
 };
 
 
-FileSource FS;// indicate what is the source of the hard drive
+//FileSource FS;// indicate what is the source of the hard drive
 
 //Description: takes a saved HD name and create HD class.
-HD *HD::pullFromDB(DB &db, std::string HDName) {
+HD *HD::pull_From_DB(DB &db, std::string HDName) {
     return db.GetHDByName(HDName);
 }
 
@@ -28,4 +28,8 @@ FILE *HD::ListExecutebels() {
 void HD::SaveInDB(DB &db) {
     //Description: saves the HD properties in the given DB.
     db.InsertHD(this);
+}
+
+HD::~HD() {
+
 }
